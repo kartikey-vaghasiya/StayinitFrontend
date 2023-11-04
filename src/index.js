@@ -1,17 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react';
+import ReactDOM from "react-dom/client"
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom"
+import { ThemeProvider } from "@material-tailwind/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import AllHostelsCard from './Components/Hostels/AllHostelsCard';
+import Home from './Components/Home'
+import HostelPage from './Components/Hostels/HostelPage';
+import FlatPage from './Components/Flats/FlatPage';
+import HomePage from './Components/HomePage'
+import AllFlatsCard from './Components/Flats/AllFlatsCard';
+import Login from './Components/Login'
+import Signup from './Components/Signup'
+import AI from './Components/AI'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<Home />}>
+    <Route index element={<HomePage />} />
+    <Route path="/hostels" element={<AllHostelsCard />} />
+    <Route path="/hostels/:id" element={<HostelPage />} />
+    <Route path="/flats" element={<AllFlatsCard />} />
+    <Route path="/flats/:id" element={<FlatPage />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/signup" element={<Signup />} />
+    <Route path="/ai" element={<AI />} />
+  </Route>
+))
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
+  )
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />)
