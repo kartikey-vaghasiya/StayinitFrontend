@@ -51,7 +51,7 @@ export default function HostelCard(props) {
                         <div className="flex justify-center flex-col w-full h-auto min-w-[200px] max-w-[500px]">
                             <div className="text-teal-950 text-xs leading-3 tracking-wide self-start whitespace-nowrap ">
                                 <h3>
-                                    <a href="https://www.sonder.com/en-gb/destinations/london/LON-LEIN23-one/c33110" rel="noopener noreferrer" target="_blank">
+                                    <a href="" rel="noopener noreferrer" target="_blank">
                                         ROOM SHARING &amp; YEARLY FEES
                                     </a>
                                 </h3>

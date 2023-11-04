@@ -26,27 +26,6 @@ export default function FlatInfo() {
         const p_loc = flat.property_locality.toLowerCase()
         const p_isfun = flat.furnitureType.toLowerCase()
 
-        const d = JSON.stringify({
-            property_sqft: flat.property_sqft,
-            property_bhk: flat.property_bhk,
-            property_city: p_city,
-            property_locality: p_loc,
-            is_furnished: p_isfun,
-            property_project: p_proj,
-            num_of_baths: flat.num_of_baths,
-            bachelors_or_family: "bachelors",
-            floornumber: flat.atWhichFloor,
-            totalfloor: flat.totalfloor || flat.atWhichFloor,
-            property_pricenan: 0,
-            property_bhknan: 0,
-            property_sqftnan: 0,
-            num_of_bathsnan: 0,
-            floornumbernan: 0,
-            totalfloornan: 0
-        })
-
-
-        console.log(d)
 
         if (loginData.isLoggedIn) {
             const response = await fetch('http://localhost:8000/', {
@@ -183,7 +162,7 @@ export default function FlatInfo() {
                     <div className=" cursor-pointer hover:bg-colorY2H rounded-[1rem] border shadow-sm border-[#F3EADC] p-6 flex flex-col items-start w-full h-auto min-w-[300px] max-w-[600px] relative">
                         <div className="text-teal-950 text-xs leading-3 tracking-wide self-start whitespace-nowrap">
                             <h3>
-                                <a href="https://www.sonder.com/en-gb/destinations/london/LON-LEIN23-one/c33110" rel="noopener noreferrer" target="_blank">
+                                <a href="" rel="noopener noreferrer" target="_blank">
                                     ROOM BHK &amp; RENT
                                 </a>
                             </h3>
@@ -228,7 +207,7 @@ export default function FlatInfo() {
                     <div className=" cursor-pointer hover:bg-colorY2H rounded-[1rem] border shadow-sm border-[#F3EADC] p-6 flex items-center flex-col w-full h-auto min-w-[300px] max-w-[600px]">
                         <div className="text-teal-950 text-xs leading-3 tracking-wide self-start whitespace-nowrap">
                             <h3>
-                                <a href="https://www.sonder.com/en-gb/destinations/london/LON-LEIN23-one/c33110" rel="noopener noreferrer" target="_blank">
+                                <a href="" rel="noopener noreferrer" target="_blank">
                                     Contact Details
                                 </a>
                             </h3>

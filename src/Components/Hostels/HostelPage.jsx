@@ -124,7 +124,7 @@ export default function HostelInfo() {
                     <div className=" cursor-pointer hover:bg-colorY2H rounded-[1rem] border shadow-sm border-[#F3EADC] p-6 flex flex-col items-start w-full h-auto min-w-[300px] max-w-[600px] relative">
                         <div className=" text-teal-950 text-xs leading-3 tracking-wide self-start whitespace-nowrap">
                             <h3>
-                                <a href="https://www.sonder.com/en-gb/destinations/london/LON-LEIN23-one/c33110" rel="noopener noreferrer" target="_blank">
+                                <a href="" rel="noopener noreferrer" target="_blank">
                                     ROOM BHK &amp; RENT
                                 </a>
                             </h3>
@@ -139,7 +139,7 @@ export default function HostelInfo() {
                     <div className=" cursor-pointer hover:bg-colorY2H rounded-[1rem] border shadow-sm border-[#F3EADC] p-6 flex items-center flex-col w-full h-auto min-w-[300px] max-w-[600px]">
                         <div className="text-teal-950 text-xs leading-3 tracking-wide self-start whitespace-nowrap">
                             <h3>
-                                <a href="https://www.sonder.com/en-gb/destinations/london/LON-LEIN23-one/c33110" rel="noopener noreferrer" target="_blank">
+                                <a href="" rel="noopener noreferrer" target="_blank">
                                     Contact Details
                                 </a>
                             </h3>
